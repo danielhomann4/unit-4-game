@@ -1,3 +1,1 @@
-$("#img1").click(function() {
-    alert("I have been clicked!")
-});
+Math.floor(Math.random() * ((120-19) +1)+2);
