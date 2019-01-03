@@ -91,6 +91,11 @@
     </div>
     <script>
     // Math.floor(Math.random() * ((120-19) +1)+2);
+    var score = $("#score")
+
+    function add(a, b) {
+        return a + b;
+    }
     function random(){
         $("#reach").append(Math.floor(Math.random()* 100)+50)
     }
@@ -111,6 +116,9 @@
         console.log(Math.floor(Math.random() * ((12-1)+1)+1))
         $("#score").append(Math.floor(Math.random()*((12-1)+1)+1))
     });
-    </script>
+    if (score === random){
+        alert("Won");
+    }
+    </script>)
   </body>
 </html>
