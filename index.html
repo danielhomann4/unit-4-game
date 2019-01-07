@@ -96,29 +96,45 @@
     function add(a, b) {
         return a + b;
     }
+
+    // set random number to reach
     function random(){
         $("#reach").append(Math.floor(Math.random()* 100)+50)
     }
     window.onload = random;
-    $( "#img1" ).click(function() {
+
+    // give images numbers
+    $( "#img1" ).ready(function() {
         console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-        $("#score").append(Math.floor(Math.random()*((12-1)+1)+1))
     });
-    $( "#img2" ).click(function() {
+    $( "#img2" ).ready(function() {
         console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-        $("#score").append(Math.floor(Math.random()*((12-1)+1)+1))
     });
-    $( "#img3" ).click(function() {
+    $( "#img3" ).ready(function() {
         console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-        $("#score").append(Math.floor(Math.random()*((12-1)+1)+1))
     });
-    $( "#img4" ).click(function() {
+    $( "#img4" ).ready(function() {
         console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-        $("#score").append(Math.floor(Math.random()*((12-1)+1)+1))
     });
+
+    // click to put numbers on page
+    $("#img1").click(function(){
+        $("#score").append("yay");
+    });
+    $("#img2").click(function(){
+        $("#score").append("yay");
+    });
+    $("#img3").click(function(){
+        $("#score").append("yay");
+    });
+    $("#img4").click(function(){
+        $("#score").append("yay");
+    });
+
+
     if (score === random){
         alert("Won");
     }
-    </script>)
+    </script>
   </body>
 </html>
