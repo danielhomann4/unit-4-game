@@ -92,6 +92,10 @@
     <script>
     // Math.floor(Math.random() * ((120-19) +1)+2);
     var score = $("#score")
+    var jewel1 = $("#img1")
+    var jewel2 = $("#img2")
+    var jewel3 = $("#img3")
+    var jewel4 = $("#img4")
 
     function add(a, b) {
         return a + b;
@@ -103,6 +107,24 @@
     }
     window.onload = random;
 
+    function crystals() {
+        return {
+            img1: {
+                points: Math.floor(Math.random() * 12) +1,
+            },
+            img2: {
+                points: Math.floor(Math.random() * 12) +1,
+            },
+            img3: {
+                points: Math.floor(Math.random() * 12) +1,
+            },
+            img4: {
+                points: Math.floor(Math.random() * 12) +1,
+            }
+        };
+    }
+
+    function update
     // give images numbers
     $( "#img1" ).ready(function() {
         console.log(Math.floor(Math.random() * ((12-1)+1)+1))
