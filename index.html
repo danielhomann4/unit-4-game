@@ -91,11 +91,24 @@
     </div>
     <script>
     // Math.floor(Math.random() * ((120-19) +1)+2);
-    var score = $("#score")
-    var jewel1 = $("#img1")
-    var jewel2 = $("#img2")
-    var jewel3 = $("#img3")
-    var jewel4 = $("#img4")
+    var score = 0;
+    var img1 = {
+        points: (Math.floor(Math.random() * ((12-1)+1)+1))
+    };
+    var img2 = {
+        points: (Math.floor(Math.random() * ((12-1)+1)+1))
+    };
+    var img3 = {
+        points: (Math.floor(Math.random() * ((12-1)+1)+1))
+    };
+    var img4 = {
+        points: (Math.floor(Math.random() * ((12-1)+1)+1))
+    };
+
+    // img1 = $("#img1")
+    // img2 = $("#img2")
+    // img3 = $("#img3")
+    // img4 = $("#img4")
 
     function add(a, b) {
         return a + b;
@@ -107,51 +120,38 @@
     }
     window.onload = random;
 
-    function crystals() {
-        return {
-            img1: {
-                points: Math.floor(Math.random() * 12) +1,
-            },
-            img2: {
-                points: Math.floor(Math.random() * 12) +1,
-            },
-            img3: {
-                points: Math.floor(Math.random() * 12) +1,
-            },
-            img4: {
-                points: Math.floor(Math.random() * 12) +1,
-            }
-        };
-    }
-
-    function update
-    // give images numbers
-    $( "#img1" ).ready(function() {
-        console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-    });
-    $( "#img2" ).ready(function() {
-        console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-    });
-    $( "#img3" ).ready(function() {
-        console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-    });
-    $( "#img4" ).ready(function() {
-        console.log(Math.floor(Math.random() * ((12-1)+1)+1))
-    });
-
-    // click to put numbers on page
     $("#img1").click(function(){
-        $("#score").append("yay");
-    });
-    $("#img2").click(function(){
-        $("#score").append("yay");
-    });
-    $("#img3").click(function(){
-        $("#score").append("yay");
-    });
-    $("#img4").click(function(){
-        $("#score").append("yay");
-    });
+        $("#score").append(img1.points)
+    })
+
+
+//     // give images numbers
+//     $( "#img1" ).ready(function() {
+//         img1.attr("random", Math.floor(Math.random() * ((12-1)+1)+1))
+//     });
+//     $( "#img2" ).ready(function() {
+//         img2.attr("random", Math.floor(Math.random() * ((12-1)+1)+1))
+//     });
+//     $( "#img3" ).ready(function() {
+//         img3.attr("random", Math.floor(Math.random() * ((12-1)+1)+1))
+//     });
+//     $( "#img4" ).ready(function() {
+//         img4.attr("random", Math.floor(Math.random() * ((12-1)+1)+1))
+//     });
+// // USE THE THIS ATTRIBUTE TO CALL IMAGE ATTRIBUTE
+//     // click to put numbers on page
+//     $("#img1").click(function(){
+//        return $(this).attr()
+//     });
+//     $("#img2").click(function(){
+//         $("#score").append("yay");
+//     });
+//     $("#img3").click(function(){
+//         $("#score").append("yay");
+//     });
+//     $("#img4").click(function(){
+//         $("#score").append("yay");
+//     });
 
 
     if (score === random){
@@ -160,3 +160,4 @@
     </script>
   </body>
 </html>
+
